@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Route Not Found | Nexus Dispatch</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23ff5e00'/><text x='50' y='70' font-family='sans-serif' font-size='60' font-weight='bold' fill='%23ffffff' text-anchor='middle'>N</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .error-page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            background-image: 
+                radial-gradient(circle at 50% 50%, rgba(255, 94, 0, 0.1) 0%, transparent 50%),
+                linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: 100% 100%, 40px 40px, 40px 40px;
+        }
+        .error-code {
+            font-size: 8rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary-color), #ff9e00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0;
+            line-height: 1;
+        }
+        .error-icon {
+            font-size: 4rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-page container">
+        <i class="fas fa-map-signs error-icon"></i>
+        <h1 class="error-code">404</h1>
+        <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Route Not Found</h2>
+        <p style="color: var(--text-muted); font-size: 1.125rem; max-width: 500px; margin-bottom: 2rem;">
+            It looks like this lane is a dead end. The page you are looking for might have been moved or no longer exists.
+        </p>
+        <a href="index.html" class="btn btn-primary" style="padding: 1rem 2.5rem; font-size: 1.125rem;">
+            <i class="fas fa-undo"></i> Return to Dispatch
+        </a>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

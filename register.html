@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Registration | Nexus Dispatch</title>
+    <meta name="description" content="Register your trucking business with Nexus Dispatch to start securing premium freight loads.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23ff5e00'/><text x='50' y='70' font-family='sans-serif' font-size='60' font-weight='bold' fill='%23ffffff' text-anchor='middle'>N</text></svg>">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-route logo-icon"></i>
+                Nexus<span class="text-gradient">Dispatch</span>
+            </a>
+            
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="contact.html">Contact</a>
+                <div class="nav-actions mobile-only-hidden">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                    <a href="register.html" class="active btn btn-primary">Driver Registration</a>
+                </div>
+            </nav>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header bg-register">
+        <div class="container fade-up">
+            <h1 class="page-title">Driver <span class="text-gradient">Registration</span></h1>
+            <p class="page-desc">Complete this brief application to begin onboarding. Our team will review your MC# and get you set up within 24 hours.</p>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="section">
+        <div class="container" style="max-width: 800px;">
+            <div class="form-card fade-up">
+                <form id="registration-form">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <div class="form-group">
+                            <label class="form-label" for="firstName">First Name *</label>
+                            <input type="text" id="firstName" class="form-control" required placeholder="John">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" class="form-control" required placeholder="Doe">
+                        </div>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email Address *</label>
+                            <input type="email" id="email" class="form-control" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" class="form-control" required placeholder="(555) 000-0000">
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <div class="form-group">
+                            <label class="form-label" for="mcNumber">MC Number *</label>
+                            <input type="text" id="mcNumber" class="form-control" required placeholder="e.g. 123456">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="dotNumber">DOT Number *</label>
+                            <input type="text" id="dotNumber" class="form-control" required placeholder="e.g. 987654">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="equipmentType">Equipment Type *</label>
+                        <select id="equipmentType" class="form-control" required style="appearance: auto;">
+                            <option value="" disabled selected>Select equipment</option>
+                            <option value="dry_van">Dry Van</option>
+                            <option value="reefer">Reefer</option>
+                            <option value="flatbed">Flatbed</option>
+                            <option value="stepdeck">Step Deck</option>
+                            <option value="hotshot">Hotshot</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="preferredLanes">Preferred Lanes / Operational Areas</label>
+                        <textarea id="preferredLanes" class="form-control" placeholder="e.g. Midwest to Southeast only..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem; padding: 1rem; font-size: 1.125rem;">
+                        Submit Application <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-route logo-icon"></i>
+                        Nexus<span class="text-gradient">Dispatch</span>
+                    </a>
+                    <p>Empowering owner-operators and fleets with end-to-end dispatching, route optimization, and back-office solutions.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing Plans</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Load Board</a></li>
+                        <li><a href="#">Driver Portal</a></li>
+                        <li><a href="#">Blog & News</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="mailto:dispatch@nexus.com"><i class="fas fa-envelope"></i> dispatch@nexus.com</a></li>
+                        <li><a href="tel:+18005550199"><i class="fas fa-phone"></i> +1 (800) 555-0199</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> 112 Logistics Way, Suite 400<br>Chicago, IL 60601</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nexus Dispatch LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

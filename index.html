@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Dispatch | Premium Trucking & Logistics</title>
+    <meta name="description" content="24/7 dedicated truck dispatching services. We handle route planning, load booking, and documentation so you can focus on driving.">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23ff5e00'/><text x='50' y='70' font-family='sans-serif' font-size='60' font-weight='bold' fill='%23ffffff' text-anchor='middle'>N</text></svg>">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader-content">
+            <i class="fas fa-route loader-icon"></i>
+            <h2 class="loader-text">Nexus<span class="text-gradient">Dispatch</span></h2>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-route logo-icon"></i>
+                Nexus<span class="text-gradient">Dispatch</span>
+            </a>
+            
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="contact.html">Contact</a>
+                <div class="nav-actions mobile-only-hidden">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                    <a href="register.html" class="btn btn-primary">Driver Registration</a>
+                </div>
+            </nav>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-gradient"></div>
+        <div class="container hero-grid">
+            <div class="hero-content fade-up">
+                <h1>Maximize Your Earnings. <br><span class="text-gradient type-effect"></span></h1>
+                <p>Premium 24/7 truck dispatching solutions. We negotiate the best rates, handle all documentation, and plan the most efficient routes so you can keep moving forward.</p>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <a href="pricing.html" class="btn btn-primary">View Our Plans <i class="fas fa-arrow-right"></i></a>
+                    <a href="contact.html" class="btn btn-outline">Get a Quote</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h4>$2B+</h4>
+                        <p>Gross Volume Generated</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>24/7</h4>
+                        <p>Dispatch Support</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>98%</h4>
+                        <p>Driver Retention</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image fade-up" style="transition-delay: 0.2s;">
+                <div class="hero-img-inner carousel-container">
+                    <img src="assets/hero_truck_neon.png" alt="Modern Truck on Highway" class="carousel-img active">
+                    <img src="assets/about_warehouse.png" alt="Warehouse Facilities" class="carousel-img">
+                    <img src="assets/service_load_booking.png" alt="Dispatch Operations" class="carousel-img">
+                    <div class="carousel-indicators">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <div class="floating-card glass">
+                    <div class="icon-box">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div>
+                        <h5 style="margin-bottom: 0.25rem;">Rate Negotiation</h5>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Top paying loads secured.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Loads Marquee -->
+    <div class="marquee">
+        <div class="marquee-content">
+            <div class="marquee-item"><div class="status-dot"></div> <strong>Dallas, TX <i class="fas fa-arrow-right"></i> Chicago, IL</strong> | Dry Van | $3.45/mi | <span style="color:var(--primary-color);">BOOKED</span></div>
+            <div class="marquee-item"><div class="status-dot"></div> <strong>Atlanta, GA <i class="fas fa-arrow-right"></i> Miami, FL</strong> | Reefer | $4.10/mi | <span style="color:var(--primary-color);">BOOKED</span></div>
+            <div class="marquee-item"><div class="status-dot"></div> <strong>Los Angeles, CA <i class="fas fa-arrow-right"></i> Phoenix, AZ</strong> | Flatbed | $3.80/mi | <span style="color:var(--primary-color);">BOOKED</span></div>
+            <div class="marquee-item"><div class="status-dot"></div> <strong>Houston, TX <i class="fas fa-arrow-right"></i> Denver, CO</strong> | Step Deck | $3.20/mi | <span style="color:var(--primary-color);">BOOKED</span></div>
+            <div class="marquee-item"><div class="status-dot"></div> <strong>Seattle, WA <i class="fas fa-arrow-right"></i> Portland, OR</strong> | Dry Van | $4.50/mi | <span style="color:var(--primary-color);">BOOKED</span></div>
+        </div>
+        <!-- Duplicated content for seamless infinite loop -->
+        <div class="marquee-content">
+            <div class="marquee-item"><div class="status-dot"></div> <strong>Dallas, TX <i class="fas fa-arrow-right"></i> Chicago, IL</strong> | Dry Van | $3.45/mi | <span style="color:var(--primary-color);">BOOKED</span></div>
+            <div class="marquee-item"><div class="status-dot"></div> <strong>Atlanta, GA <i class="fas fa-arrow-right"></i> Miami, FL</strong> | Reefer | $4.10/mi | <span style="color:var(--primary-color);">BOOKED</span></div>
+            <div class="marquee-item"><div class="status-dot"></div> <strong>Los Angeles, CA <i class="fas fa-arrow-right"></i> Phoenix, AZ</strong> | Flatbed | $3.80/mi | <span style="color:var(--primary-color);">BOOKED</span></div>
+            <div class="marquee-item"><div class="status-dot"></div> <strong>Houston, TX <i class="fas fa-arrow-right"></i> Denver, CO</strong> | Step Deck | $3.20/mi | <span style="color:var(--primary-color);">BOOKED</span></div>
+            <div class="marquee-item"><div class="status-dot"></div> <strong>Seattle, WA <i class="fas fa-arrow-right"></i> Portland, OR</strong> | Dry Van | $4.50/mi | <span style="color:var(--primary-color);">BOOKED</span></div>
+        </div>
+    </div>
+
+    <!-- Core Services -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>Our Core Services</h2>
+                <p>We provide comprehensive logistics and transportation solutions, tailored to maximize efficiency and driver profitability.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card fade-up">
+                    <div class="service-icon"><i class="fas fa-boxes"></i></div>
+                    <h3>Load Booking</h3>
+                    <p>We utilize advanced load boards and our broker network to find the highest paying loads for your specific equipment.</p>
+                    <a href="services.html" class="service-link">Learn More <i class="fas fa-angle-right"></i></a>
+                </div>
+                
+                <div class="service-card fade-up" style="transition-delay: 0.1s;">
+                    <div class="service-icon"><i class="fas fa-route"></i></div>
+                    <h3>Route Planning</h3>
+                    <p>Optimized routing to reduce deadhead miles, avoid traffic/weather delays, and maximize your fuel efficiency.</p>
+                    <a href="services.html" class="service-link">Learn More <i class="fas fa-angle-right"></i></a>
+                </div>
+                
+                <div class="service-card fade-up" style="transition-delay: 0.2s;">
+                    <div class="service-icon"><i class="fas fa-file-contract"></i></div>
+                    <h3>Documentation</h3>
+                    <p>From rate cons to invoicing, factoring setup, and carrier packets—we handle 100% of the back-office paperwork.</p>
+                    <a href="services.html" class="service-link">Learn More <i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us / CTA -->
+    <section class="cta-section fade-up">
+        <div class="container">
+            <div class="cta-box">
+                <div class="cta-pattern"></div>
+                <h2>Ready to scale your trucking business?</h2>
+                <p>Join hundreds of satisfied owner-operators who have increased their weekly gross revenue by an average of 14% with Nexus Dispatch.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center;">
+                    <a href="register.html" class="btn btn-primary" style="position: relative; z-index: 5;">Apply Now</a>
+                    <a href="contact.html" class="btn btn-outline" style="position: relative; z-index: 5; color: #fff; border-color: rgba(255,255,255,0.3);">Talk to an Expert</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-route logo-icon"></i>
+                        Nexus<span class="text-gradient">Dispatch</span>
+                    </a>
+                    <p>Empowering owner-operators and fleets with end-to-end dispatching, route optimization, and back-office solutions.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing Plans</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Load Board</a></li>
+                        <li><a href="#">Driver Portal</a></li>
+                        <li><a href="#">Blog & News</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="mailto:dispatch@nexus.com"><i class="fas fa-envelope"></i> dispatch@nexus.com</a></li>
+                        <li><a href="tel:+18005550199"><i class="fas fa-phone"></i> +1 (800) 555-0199</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> 112 Logistics Way, Suite 400<br>Chicago, IL 60601</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nexus Dispatch LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

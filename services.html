@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Nexus Dispatch</title>
+    <meta name="description" content="View our premium logistics and truck dispatching services. We manage load booking, paperwork, and route planning.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23ff5e00'/><text x='50' y='70' font-family='sans-serif' font-size='60' font-weight='bold' fill='%23ffffff' text-anchor='middle'>N</text></svg>">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-route logo-icon"></i>
+                Nexus<span class="text-gradient">Dispatch</span>
+            </a>
+            
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="contact.html">Contact</a>
+                <div class="nav-actions mobile-only-hidden">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                    <a href="register.html" class="btn btn-primary">Driver Registration</a>
+                </div>
+            </nav>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header bg-services">
+        <div class="container fade-up">
+            <h1 class="page-title">Our <span class="text-gradient">Services</span></h1>
+            <p class="page-desc">From load negotiating to backend administration, we provide an expansive suite of services to ensure your trucks never stop producing revenue.</p>
+        </div>
+    </section>
+
+    <!-- Services Details -->
+    <section class="section">
+        <div class="container">
+            <div class="hero-grid" style="align-items: center; margin-bottom: 6rem;">
+                <div class="fade-up">
+                    <img src="assets/service_load_booking.png" alt="Load Booking" style="border-radius: 1rem; box-shadow: var(--shadow-lg);">
+                </div>
+                <div class="fade-up" style="transition-delay: 0.2s;">
+                    <div class="service-icon"><i class="fas fa-handshake"></i></div>
+                    <h2 style="font-size: 2rem; margin-bottom: 1rem;">Load Booking & Negotiation</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Finding freight isn't enough; securing top-paying freight is the goal. We leverage established broker relationships and private load boards to negotiate premium rates, taking into account market trends, equipment type, and lane preferences.</p>
+                    <ul class="feature-list">
+                        <li class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <div>
+                                <strong>Rate Negotiation</strong>
+                                <p style="font-size: 0.85rem; color: var(--text-muted);">Aggressive bidding to maximize RPM (Rate Per Mile).</p>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <div>
+                                <strong>Lane Optimization</strong>
+                                <p style="font-size: 0.85rem; color: var(--text-muted);">Booking freight that leads to 'hot' markets rather than dead zones.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="hero-grid" style="align-items: center; margin-bottom: 6rem;">
+                <div class="fade-up" style="order: 2;">
+                    <img src="assets/service_back_office.png" alt="Back Office" style="border-radius: 1rem; box-shadow: var(--shadow-lg);">
+                </div>
+                <div class="fade-up" style="order: 1; transition-delay: 0.2s;">
+                    <div class="service-icon"><i class="fas fa-file-invoice"></i></div>
+                    <h2 style="font-size: 2rem; margin-bottom: 1rem;">Documentation & Back Office</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Your time shouldn't be spent scanning documents and begging brokers for detention pay. We'll handle the paperwork from start to finish, ensuring you get paid quickly and accurately.</p>
+                    <ul class="feature-list">
+                        <li class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <div>
+                                <strong>Carrier Packets & Rate Cons</strong>
+                                <p style="font-size: 0.85rem; color: var(--text-muted);">We fill out packets, verify insurance, and sign rate confirmations.</p>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <div>
+                                <strong>Invoicing & Factoring</strong>
+                                <p style="font-size: 0.85rem; color: var(--text-muted);">Seamless integration with your factoring company for fast payouts.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="hero-grid" style="align-items: center;">
+                <div class="fade-up">
+                    <img src="assets/about_warehouse.png" alt="Driver Support" style="border-radius: 1rem; box-shadow: var(--shadow-lg);">
+                </div>
+                <div class="fade-up" style="transition-delay: 0.2s;">
+                    <div class="service-icon"><i class="fas fa-headset"></i></div>
+                    <h2 style="font-size: 2rem; margin-bottom: 1rem;">24/7 Driver Support</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">The road doesn't sleep, and neither do we. Our team is available 24/7 to solve on-the-road issues, from lumpers and layovers to navigating complex delivery facilities.</p>
+                    <ul class="feature-list">
+                        <li class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <div>
+                                <strong>Emergency Assistance</strong>
+                                <p style="font-size: 0.85rem; color: var(--text-muted);">Immediate communication with brokers in case of breakdown or delay.</p>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <div>
+                                <strong>Route Planning</strong>
+                                <p style="font-size: 0.85rem; color: var(--text-muted);">Providing directions, weather updates, and optimized stop planning.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" style="background-color: var(--bg-color); border-top: 1px solid var(--border-color);">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about partnering with Nexus Dispatch.</p>
+            </div>
+            
+            <div class="faq-container fade-up" style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you force dispatch?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Never. You are the boss. We present you with the best load options available, but the final decision to book a load is always 100% yours.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What documents do I need to get started?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We require a valid MC Authority, W-9, Certificate of Insurance (showing $1M auto liability & $100k cargo), and a Notice of Assignment (NOA) if you use a factoring company.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How quickly can I start getting loads?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Once you submit your registration and required documents, our onboarding process takes less than 24 hours. You can be rolling with your first load the next day.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you help with factoring setup?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We have established relationships with top factoring companies and can help you get set up quickly to ensure you get paid on time, every time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-route logo-icon"></i>
+                        Nexus<span class="text-gradient">Dispatch</span>
+                    </a>
+                    <p>Empowering owner-operators and fleets with end-to-end dispatching, route optimization, and back-office solutions.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing Plans</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Load Board</a></li>
+                        <li><a href="#">Driver Portal</a></li>
+                        <li><a href="#">Blog & News</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="mailto:dispatch@nexus.com"><i class="fas fa-envelope"></i> dispatch@nexus.com</a></li>
+                        <li><a href="tel:+18005550199"><i class="fas fa-phone"></i> +1 (800) 555-0199</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> 112 Logistics Way, Suite 400<br>Chicago, IL 60601</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nexus Dispatch LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
